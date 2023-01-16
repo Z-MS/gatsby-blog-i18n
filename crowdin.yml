@@ -1,3 +1,3 @@
 files:
   - source: /blog/**/index.mdx
-    translation: ' /blog/**/index.%two_letters_code%.mdx'
+    translation: /blog/**/index.%two_letters_code%.mdx
