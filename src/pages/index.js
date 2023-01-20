@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
 					data.allMdx.nodes.map(node => (
 						<article key={node.id}>
 							<h2>
-								<Link to={`blog/${node.frontmatter.slug}`}>
+								<Link to={`/blog/${node.frontmatter.slug}`}>
 									{node.frontmatter.title}
 								</Link>
 							</h2>
