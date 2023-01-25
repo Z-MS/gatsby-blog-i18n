@@ -28,8 +28,8 @@ const BlogPost = ({ data }) => {
 }
 
 export const query = graphql`
-	query ($id: String) {
-	  mdx(id: { eq: $id }) {
+	query ($locale: String, $frontmatter__slug: String) {
+	  mdx(fields: {locale: {eq: $locale}}, frontmatter: {slug: {eq: $frontmatter__slug}}) {
 	    frontmatter {
 	      title
 	      date(formatString: "MMMM D, YYYY")

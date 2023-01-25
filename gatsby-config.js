@@ -43,6 +43,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       }
     },
-    `gatsby-plugin-mdx`
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-theme-i18n`,
+      options: {
+      defaultLang: `en`,
+      configPath: require.resolve(`./i18n/config.json`),
+   }
+}
   ],
 }
