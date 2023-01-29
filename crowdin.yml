@@ -1,3 +1,5 @@
 files:
   - source: /blog/**/index.mdx
     translation: /blog/**/index.%two_letters_code%.mdx
+  - source: /i18n/lingui/en/messages.json
+    translation: /i18n/lingui/%two_letters_code%/%original_file_name%
