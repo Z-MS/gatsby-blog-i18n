@@ -1,6 +1,6 @@
 {
   "About": {
-    "translation": "Abuten",
+    "translation": "Über",
     "origin": [
       [
         "src/components/layout.js",
