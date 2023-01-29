@@ -47,9 +47,9 @@ module.exports = {
     {
       resolve: `gatsby-theme-i18n`,
       options: {
-      defaultLang: `en`,
-      configPath: require.resolve(`./i18n/config.json`),
-   }
-}
+        defaultLang: `en`,
+        configPath: require.resolve(`./i18n/config.json`),
+      },
+    }
   ],
 }

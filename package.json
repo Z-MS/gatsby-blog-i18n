@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@lingui/core": "^3.16.1",
+    "@lingui/react": "^3.16.1",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^5.3.3",
@@ -15,12 +17,16 @@
     "gatsby-plugin-sharp": "^5.3.2",
     "gatsby-source-filesystem": "^5.3.1",
     "gatsby-theme-i18n": "^3.0.0",
+    "gatsby-theme-i18n-lingui": "^3.0.0",
     "gatsby-transformer-sharp": "^5.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@lingui/cli": "^3.16.1",
+    "@lingui/macro": "^3.16.1",
+    "babel-preset-gatsby": "^3.5.0",
     "prettier": "^2.8.1"
   },
   "keywords": [
@@ -34,7 +40,9 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
   },
   "repository": {
     "type": "git",
