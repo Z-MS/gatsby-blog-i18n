@@ -8,7 +8,7 @@
       "exclude": ["**/node_modules/**", "**/__tests__/**"]
     }
   ],
-  "format": "minimal",
+  "format": "lingui",
   "extractBabelOptions": {
     "presets": ["babel-preset-gatsby"]
   }
