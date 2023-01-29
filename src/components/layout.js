@@ -9,6 +9,7 @@ import {
   siteTitle
 } from './layout.module.css'
 import { LocalizedLink as Link } from 'gatsby-theme-i18n'
+import { Trans } from '@lingui/macro'
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -26,8 +27,8 @@ const Layout = ({ pageTitle, children }) => {
       <header className={siteTitle}>{data.site.siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>
-          <li className={navLinkItem}><Link to="/" className={navLinkText}>Blog</Link></li>
-          <li className={navLinkItem}><Link to="/about" className={navLinkText}>About</Link></li>
+          <li className={navLinkItem}><Link to="/" className={navLinkText}><Trans>Blog</Trans></Link></li>
+          <li className={navLinkItem}><Link to="/about" className={navLinkText}><Trans>About</Trans></Link></li>
         </ul>
       </nav>
       <main>

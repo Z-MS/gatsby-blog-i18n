@@ -4,18 +4,19 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { Trans } from "@lingui/macro"
 
 const BlogPost = ({ data }) => {
 	const image = getImage(data.mdx.frontmatter.hero_image)
 	return (
 		<Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>Posted: {data.mdx.frontmatter.date}</p>
+      <p><Trans>Posted: {data.mdx.frontmatter.date}</Trans></p>
       <GatsbyImage
       	image={image}
       	alt={data.mdx.frontmatter.hero_image_alt}
       />
       <p>
-      	Photo Credit:{" "}
+      	<Trans>Photo Credit:</Trans>{" "}
       	<a href={data.mdx.frontmatter.hero_image_credit_link}>
       		{data.mdx.frontmatter.hero_image_credit_text}
       	</a>
