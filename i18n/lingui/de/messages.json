@@ -1,0 +1,56 @@
+{
+  "About": {
+    "translation": "Abuten",
+    "origin": [
+      [
+        "src/components/layout.js",
+        31
+      ],
+      [
+        "src/pages/about.js",
+        9
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Blog": {
+    "translation": "Blog",
+    "origin": [
+      [
+        "src/components/layout.js",
+        30
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Photo Credit:": {
+    "translation": "Photo Credit:",
+    "origin": [
+      [
+        "src/pages/blog/{mdx.frontmatter__slug}.js",
+        19
+      ]
+    ],
+    "extractedComments": []
+  },
+  "Posted: {0}": {
+    "translation": "Posted: {0}",
+    "origin": [
+      [
+        "src/pages/blog/{mdx.frontmatter__slug}.js",
+        13
+      ]
+    ],
+    "extractedComments": []
+  },
+  "This is a simple blog where code lives.": {
+    "translation": "This is a simple blog where code lives.",
+    "origin": [
+      [
+        "src/pages/about.js",
+        10
+      ]
+    ],
+    "extractedComments": []
+  }
+}
