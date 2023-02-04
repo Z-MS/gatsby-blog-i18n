@@ -17,7 +17,7 @@ const BlogPage = ({ data }) => {
 									{node.frontmatter.title}
 								</Link>
 							</h2>
-							<p>node.frontmatter.date</p>
+							<p>{node.frontmatter.date}</p>
 						</article>
 					))
 				}
