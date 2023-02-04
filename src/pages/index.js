@@ -5,6 +5,7 @@ import Seo from '../components/seo'
 import { LocalizedLink as Link } from 'gatsby-theme-i18n'
 
 const BlogPage = ({ data }) => {
+
 	return (
 		<Layout pageTitle="Blog Posts">
 			<ul>
@@ -16,7 +17,7 @@ const BlogPage = ({ data }) => {
 									{node.frontmatter.title}
 								</Link>
 							</h2>
-							<p>{node.frontmatter.date}</p>
+							<p>node.frontmatter.date</p>
 						</article>
 					))
 				}
