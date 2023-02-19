@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import { MDXRenderer } from "gatsby-plugin-mdx"
-
+ 
 const BlogPost = ({ data }) => {
 	const image = getImage(data.mdx.frontmatter.hero_image)
 	return (
