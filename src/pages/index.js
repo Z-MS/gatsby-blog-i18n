@@ -3,9 +3,10 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { LocalizedLink as Link } from 'gatsby-theme-i18n'
+import { useLingui } from '@lingui/react'
 
 const BlogPage = ({ data }) => {
-
+	const { i18n } = useLingui()
 	return (
 		<Layout pageTitle="Blog Posts">
 			<ul>
@@ -17,7 +18,7 @@ const BlogPage = ({ data }) => {
 									{node.frontmatter.title}
 								</Link>
 							</h2>
-							<p>{node.frontmatter.date}</p>
+							<p>{i18n.date(node.frontmatter.date, { dateStyle: "long" })}</p>
 						</article>
 					))
 				}

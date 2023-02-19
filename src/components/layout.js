@@ -10,6 +10,7 @@ import {
 } from './layout.module.css'
 import { LocalizedLink as Link } from 'gatsby-theme-i18n'
 import { Trans } from '@lingui/macro'
+import LocaleSwitcher from './LocaleSwitcher'
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +26,7 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
       <header className={siteTitle}><Trans id="site_title">{data.site.siteMetadata.title}</Trans></header>
+      <LocaleSwitcher/>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}><Link to="/" className={navLinkText}><Trans>Blog</Trans></Link></li>

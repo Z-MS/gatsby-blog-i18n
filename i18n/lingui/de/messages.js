@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:JSON.parse("{\"About\":\"Über\",\"Blog\":\"Bloggen\",\"Photo Credit:\":\"Bildnachweis:\",\"Posted: {0}\":[\"Gesendet: \",[\"0\"]],\"This is a simple blog where code lives.\":\"Dies ist ein einfacher Blog, in dem Code lebt.\",\"site_title\":\"Der Code-Blog\"}")};

@@ -3,14 +3,16 @@ import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image' 
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Trans } from "@lingui/macro"
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { Trans } from '@lingui/macro'
+import { useLingui } from '@lingui/react'
 
 const BlogPost = ({ data }) => {
 	const image = getImage(data.mdx.frontmatter.hero_image)
+	const { i18n } = useLingui()
 	return (
 		<Layout pageTitle={data.mdx.frontmatter.title}>
-      <p><Trans>Posted: {data.mdx.frontmatter.date}</Trans></p>
+      <p><Trans>Posted: {i18n.date(data.mdx.frontmatter.date, { dateStyle: "long" })}</Trans></p>
       <GatsbyImage
       	image={image}
       	alt={data.mdx.frontmatter.hero_image_alt}
